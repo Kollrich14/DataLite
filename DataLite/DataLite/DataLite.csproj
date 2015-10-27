@@ -154,7 +154,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
     <Content Include="Account\AddPhoneNumber.aspx" />
     <Content Include="Account\Confirm.aspx" />
     <Content Include="Account\Forgot.aspx" />
@@ -170,16 +169,24 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
-    <Content Include="Contact.aspx" />
+    <Content Include="AdminPages\AdminContact.aspx" />
+    <Content Include="AdminPages\AdminDownloads.aspx" />
+    <Content Include="AdminPages\AdminNews.aspx" />
+    <Content Include="AdminPages\AdminOrder.aspx" />
+    <Content Include="AdminPages\AdminStorage.aspx" />
+    <Content Include="CostumerPages\CostumerContact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="CostumerPages\CostumerDownloads.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="CostumerPages\CostumerOrder.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -209,10 +216,11 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Default.aspx" />
+    <Content Include="CostumerPages\CostumerNews.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Site.Master" />
+    <None Include="Site.Master" />
+    <Content Include="CostumerPages\CostumerStorage.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -333,39 +341,89 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
-    <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="AdminPages\AdminContact.aspx.cs">
+      <DependentUpon>AdminContact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="AdminPages\AdminContact.aspx.designer.cs">
+      <DependentUpon>AdminContact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdminPages\AdminDownloads.aspx.cs">
+      <DependentUpon>AdminDownloads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPages\AdminDownloads.aspx.designer.cs">
+      <DependentUpon>AdminDownloads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPages\AdminNews.aspx.cs">
+      <DependentUpon>AdminNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPages\AdminNews.aspx.designer.cs">
+      <DependentUpon>AdminNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPages\AdminOrder.aspx.cs">
+      <DependentUpon>AdminOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPages\AdminOrder.aspx.designer.cs">
+      <DependentUpon>AdminOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPages\AdminStorage.aspx.cs">
+      <DependentUpon>AdminStorage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPages\AdminStorage.aspx.designer.cs">
+      <DependentUpon>AdminStorage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="CostumerPages\CostumerContact.aspx.cs">
+      <DependentUpon>CostumerContact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="CostumerPages\CostumerContact.aspx.designer.cs">
+      <DependentUpon>CostumerContact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="CostumerPages\CostumerDownloads.aspx.cs">
+      <DependentUpon>CostumerDownloads.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="CostumerPages\CostumerDownloads.aspx.designer.cs">
+      <DependentUpon>CostumerDownloads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CostumerPages\CostumerNews.aspx.cs">
+      <DependentUpon>CostumerNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CostumerPages\CostumerNews.aspx.designer.cs">
+      <DependentUpon>CostumerNews.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="CostumerPages\CostumerOrder.aspx.cs">
+      <DependentUpon>CostumerOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CostumerPages\CostumerOrder.aspx.designer.cs">
+      <DependentUpon>CostumerOrder.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -378,6 +436,13 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="CostumerPages\CostumerStorage.aspx.cs">
+      <DependentUpon>CostumerStorage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CostumerPages\CostumerStorage.aspx.designer.cs">
+      <DependentUpon>CostumerStorage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

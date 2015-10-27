@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace DataLite
 {
-    public partial class _Default : Page
+    public partial class CostumerStorage : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
