@@ -11,7 +11,14 @@ namespace DataLite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (username.Value != "" && password.Value != "")
+            {
+                Response.Redirect("Default.aspx");
+            }
+            else
+            {
+                error.Text = "Die eingegebenen Anmeldedaten sind falsch.";
+            }
         }
     }
 }
