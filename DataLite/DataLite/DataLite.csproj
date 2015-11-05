@@ -184,6 +184,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
+    <Content Include="Admin.Master" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="CostumerPages\CostumerOrder.aspx" />
     <Content Include="Login.aspx" />
@@ -340,6 +341,13 @@
     </Compile>
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
     <Compile Include="AdminPages\AdminContact.aspx.cs">
       <DependentUpon>AdminContact.aspx</DependentUpon>
