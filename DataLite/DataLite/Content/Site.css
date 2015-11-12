@@ -11,19 +11,10 @@ body {
     padding-right: 15px;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
-}
-
 /* Set widths on the form inputs since otherwise they're 100% wide */
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="tel"],
-input[type="select"] {
+input,
+select,
+textarea {
     max-width: 280px;
 }
 
@@ -35,4 +26,68 @@ input[type="select"] {
     .body-content {
         padding: 0;
     }
+}
+
+html, body{
+    margin: 0px; 
+    padding: 0px;
+}
+
+#head{
+    width: 100%;
+    background-color: #488fff;
+}
+
+#head h1{
+    padding: 0px;
+    margin: 0px;
+    font-size: 30px;
+    padding: 30px;
+}
+
+#login{
+    background-color: white;
+    padding: 15px;
+    margin: 15px;
+    font-size: 30px;
+    text-decoration: none;
+    color: #488fff;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+table{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    table-layout: fixed;
+    width: 100%;
+}
+
+td{
+    border-left: 1px solid black;
+    text-align: center;
+    word-break: break-all;
+}
+
+td:hover{
+    background-color: #488fff;
+    cursor: default;
+}
+
+#openTD{
+    border-left: 0px solid black;
+}
+
+.placeholder{
+    width: 12.5%;
+}
+
+#main{
+    width: 75%;
+    height: 75%;
+    position: absolute;
+    left: 12.5%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
