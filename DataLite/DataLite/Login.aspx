@@ -9,19 +9,11 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-    <asp:Label id="loginLabel" runat="server" Text="Anmelden"></asp:Label>
-        <p>
-            <asp:Label id="usernameLabel" runat="server" Text="Benutzername:"></asp:Label>
-            <input id="username" type="text" runat="server"/></p>
-        <p>
-            <asp:Label id="passwordLabel" runat="server" Text="Kennwort:"></asp:Label>
-            <input id="password" type="password" runat="server"/></p>
-        <p>
-            <asp:Button id="loginButton" runat="server" Text="Anmelden" OnClick="loginButton_Click" />
-        </p>
-        <asp:Label ID="error" runat="server"></asp:Label>
-    </div>
+        <div>
+            <asp:Login ID="loginWindow" runat="server">
+            </asp:Login>
+            <asp:ValidationSummary ID="errorSummary" runat="server" ValidationGroup="loginWindow" />
+        </div>
     </form>
 </body>
 </html>
